@@ -4,7 +4,7 @@ chronic = input('Do you have a severe chronic disease?(yes/no) ')
 chronic = chronic.lower()
 immune = input('Is your immune system too weak?(yes/no) ')
 immune = immune.lower()
-risk = bool(age=="yes" and chronic=="yes"  and immune=="yes" )
+risk = bool(age=="yes" or chronic=="yes"  or immune=="yes" )
 
 if risk:
     print('You are in risky group.')
